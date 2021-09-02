@@ -10,9 +10,7 @@ public class Solution02 {
     // Create Scanner object.
     // Create variable to store scanned input.
     // Prompt user for input
-    // If nothing is entered, print statement asking for revised input.
-    // If "nothing" is entered, make snarky joke, then provide character count.
-    // Provide character count otherwise.
+    // Provide character count.
     /* End pseudocode */
 
     public static void main(String[] args){
@@ -21,17 +19,7 @@ public class Solution02 {
         String inputLower;
         System.out.print("What is the input string? ");
         input = scanInput.nextLine();
-        while(input.equals("")){
-            System.out.println("Input must not be null. Please enter a string.");
-            input = scanInput.nextLine();
-        }
-        inputLower = input.toLowerCase();
-        if(inputLower.equals("nothing")){
-            System.out.println("Very funny. " + input + " has " + input.length() + " characters.");
-        }
-        else{
-            System.out.println(input + " has " + input.length() + " characters.");
-        }
+        System.out.println(input + " has " + input.length() + " characters.");
     }
 
 
